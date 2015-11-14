@@ -1,0 +1,145 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_base"
+        android:background="#F44336"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+        android:elevation="2dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#3F51B5"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/iv_base"
+        android:elevation="6dp" />
+
+    <ImageView
+        android:layout_width="228dp"
+        android:layout_height="228dp"
+        android:id="@+id/unitVector"
+        android:focusable="true"
+        android:elevation="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unitTitle"
+        android:text="Meter (m)"
+        android:autoText="false"
+        android:textSize="30sp"
+        android:editable="false"
+        android:elevation="10dp"
+        android:textColor="#ffffffff"
+        android:gravity="left|right"
+        android:layout_above="@+id/unitvalue"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-regular"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SI Unit of Length"
+        android:id="@+id/unitvalue"
+        android:textSize="24sp"
+        android:elevation="10dp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/example"
+        android:layout_centerHorizontal="true"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Dolphin length is ~3m."
+        android:id="@+id/example"
+        android:textColor="#ffffff"
+        android:elevation="10dp"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:clickable="false"
+        android:layout_above="@+id/pBar"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:textIsSelectable="false" />
+
+    <com.example.abhinav.colorswirl.AnimatedGifView
+        android:id="@+id/gifview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unitVector"
+        android:layout_centerHorizontal="true"
+        android:elevation="15dp" />
+
+    <com.example.abhinav.colorswirl.AnimatedGifViewReverse
+        android:id="@+id/gifviewreverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unitVector"
+        android:layout_centerHorizontal="true"
+        android:elevation="15dp" />
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:elevation="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="15sp"
+        android:paddingBottom="10dp"
+        android:max="16"
+        android:clickable="true"
+        android:progressTint="#ffe9efff"
+        android:thumbTint="#ff69e2ff"
+        android:indeterminate="false"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n\n\n\nPinch in or out to discover!"
+        android:id="@+id/hintView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="15dp"
+        android:background="#d7270010"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="24sp"
+        android:textColor="#ffffffff"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/hintImage"
+        android:layout_alignWithParentIfMissing="false"
+        android:elevation="15dp"
+        android:visibility="visible"
+        android:background="@drawable/hint2"
+        android:layout_alignTop="@+id/unitVector"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.abhinav.colorswirl;
+package com.example.abhinav.unitswirl;
 import java.io.InputStream;
 
 import android.content.Context;
@@ -6,6 +6,8 @@ import android.graphics.Canvas;
 import android.graphics.Movie;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.example.abhinav.unitswirl.R;
 
 public class AnimatedGifView extends View {
 

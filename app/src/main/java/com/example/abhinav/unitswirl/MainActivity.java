@@ -1,4 +1,4 @@
-package com.example.abhinav.colorswirl;
+package com.example.abhinav.unitswirl;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -15,6 +15,9 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.example.abhinav.unitswirl.R;
+
 import java.util.Timer;
 
 
@@ -229,63 +232,59 @@ public class MainActivity extends Activity {
         if (present_count == 0){
             unit.setText("Meter (m)");
             value.setText("SI Unit of Length");
-            example.setText("The length of an average dolphin is about 3 meters.");
+            example.setText(R.string.meter);
             vector.setImageResource(R.drawable.dolphin);
             pBar.setProgress(7);
         }
+
         //Bigger units
         else if (present_count == 1){
             unit.setText("Kilometer (km)");
             value.setText("1km = 1000m");
             vector.setImageResource(R.drawable.burj);
-            example.setText("The height of the tallest building in the world, Burj Khalifa, " +
-                    "is 0.82 km.");
+            example.setText(R.string.km);
             pBar.setProgress(6);
         }
         else if (present_count == 2){
             unit.setText("Mile (mi)");
             value.setText("1mi = 1609.34m");
             vector.setImageResource(R.drawable.mt);
-            example.setText("The height of the tallest mountain above the ocean," +
-                    " Mount Everest, is 5.5 miles.");
+            example.setText(R.string.mi);
             pBar.setProgress(5);
         }
         else if (present_count == 3) {
             unit.setText("Nautical mile (NM, nmi)");
             value.setText("1nmi = 1852m");
             vector.setImageResource(R.drawable.ship);
-            example.setText("A ship sailing at a speed of 1 knot covered this distance" +
-                    " in an hour.");
+            example.setText(R.string.nmi);
             pBar.setProgress(4);
         }
         else if (present_count == 4) {
             unit.setText("Megameter (Mm)");
             value.setText("1Mm = 10\u2076m");
             vector.setImageResource(R.drawable.greatwall);
-            example.setText("The Great Wall of China is 6.4 mega meters and can be" +
-                    " seen from space.");
+            example.setText(R.string.Mm);
             pBar.setProgress(3);
         }
         else if (present_count == 5) {
             unit.setText("Earth Radius");
             value.setText("1 Earth Radius = 6.371 * 10\u2076m");
             vector.setImageResource(R.drawable.earth);
-            example.setText("As the name says, it's radius of the Earth.");
+            example.setText(R.string.er);
             pBar.setProgress(2);
         }
         else if (present_count == 6) {
             unit.setText("Astronomical Unit (au)");
             value.setText("1au = 1.496 * 10\u00b9\u00b9m");
             vector.setImageResource(R.drawable.earthsun);
-            example.setText("It's taken to be the huge distance between Earth and Sun.");
+            example.setText(R.string.au);
             pBar.setProgress(1);
         }
         else if (present_count == 7) {
             unit.setText("Light Year (ly)");
             value.setText("1ly = 9.46 * 10\u00b9\u2075m");
             vector.setImageResource(R.drawable.starearth);
-            example.setText("Light from the closest star, next to Sun, would " +
-                    "travel for 4.3 years to reach Earth.");
+            example.setText(R.string.ly);
             pBar.setProgress(0);
         }
 
@@ -294,43 +293,42 @@ public class MainActivity extends Activity {
             unit.setText("Yard (yd)");
             value.setText("1yd = 0.9144m");
             vector.setImageResource(R.drawable.football);
-            example.setText("Soccer field is ~110 yards.");
-            pBar.setProgress(8);
+            example.setText(R.string.yd);
+                    pBar.setProgress(8);
         }
         else if (present_count == -2) {
             unit.setText("Foot (ft)");
             value.setText("1ft = 0.3048m");
             vector.setImageResource(R.drawable.baseball);
-            example.setText("The length of baseball bat is 3.5 ft.");
+            example.setText(R.string.ft);
             pBar.setProgress(9);
         }
         else if (present_count == -3) {
             unit.setText("Inch (in)");
             value.setText("1in = 0.0254m");
             vector.setImageResource(R.drawable.golfball);
-            example.setText("The diameter of a golf ball is 1.68\".");
+            example.setText(R.string.in);
             pBar.setProgress(10);
         }
         else if (present_count == -4) {
             unit.setText("Millimeter (mm)");
             value.setText("1mm = 0.001m");
             vector.setImageResource(R.drawable.redant);
-            example.setText("The length of average red ant 5 millimeters.");
+            example.setText(R.string.mm);
             pBar.setProgress(11);
         }
         else if (present_count == -5) {
             unit.setText("Micron");
             value.setText("1 Micron = 10\u2212\u2076m");
             vector.setImageResource(R.drawable.rbc);
-            example.setText("The diameter of a Red Blood Cell (RBC) is about 7 microns.");
+            example.setText(R.string.mic);
             pBar.setProgress(12);
         }
         else if (present_count == -6) {
             unit.setText("Nanometer (nm)");
             value.setText("1nm = 10\u2212\u2079m");
             vector.setImageResource(R.drawable.beard);
-            example.setText("A beard grows at an average 7 nano meters " +
-                    "in a second. That small!");
+            example.setText(R.string.nm);
             pBar.setProgress(13);
         }
 
@@ -338,22 +336,21 @@ public class MainActivity extends Activity {
             unit.setText("Angstrom");
             value.setText("1 Angstrom = 10\u2212\u00b9\u2070m");
             vector.setImageResource(R.drawable.dna);
-            example.setText("The width of Protein \u03B1-Helix 5 angstroms.");
+            example.setText(R.string.ang);
             pBar.setProgress(14);
         }
         else if (present_count == -8) {
             unit.setText("Bohr's Radius (a\u2070)");
             value.setText("1a\u2070 = 10\u2212\u00b9\u00b9");
             vector.setImageResource(R.drawable.hydrogen);
-            example.setText("It's the radius of a stable hydrogen atom.");
+            example.setText(R.string.br);
             pBar.setProgress(15);
         }
         else if (present_count == -9) {
             unit.setText("Planck length");
             value.setText("1 Plank Length = 1.616 * 10\u2212\u00b3\u2075");
             vector.setImageResource(R.drawable.quantum);
-            example.setText("It's officially the smallest unit and is used to describe" +
-                    " actions of quantum physics.");
+            example.setText(R.string.planky);
             pBar.setProgress(16);
         }
 

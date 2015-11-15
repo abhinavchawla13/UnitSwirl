@@ -81,7 +81,7 @@
         android:fontFamily="sans-serif-light"
         android:textIsSelectable="false" />
 
-    <com.example.abhinav.colorswirl.AnimatedGifView
+    <com.example.abhinav.unitswirl.AnimatedGifView
         android:id="@+id/gifview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
         android:layout_centerHorizontal="true"
         android:elevation="15dp" />
 
-    <com.example.abhinav.colorswirl.AnimatedGifViewReverse
+    <com.example.abhinav.unitswirl.AnimatedGifViewReverse
         android:id="@+id/gifviewreverse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

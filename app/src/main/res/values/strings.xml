@@ -1,6 +1,21 @@
 <resources>
-    <string name="app_name">ColorSwirl</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">UnitSwirl</string>
     <string name="action_settings">Settings</string>
+    <string name="meter">The length of an average dolphin is about 3 meters.</string>
+    <string name="km">The height of the tallest building in the world, Burj Khalifa, is 0.82 km.</string>
+    <string name="mi">The height of the tallest mountain above the ocean, Mount Everest, is 5.5 miles.</string>
+    <string name="nmi">A ship sailing at a speed of 1 knot covered this distance in an hour.</string>
+    <string name="Mm">The Great Wall of China is 6.4 mega meters and can be seen from space.</string>
+    <string name="er">As the name says, it\'s radius of the Earth.</string>
+    <string name="yd">Soccer field is ~110 yards.</string>
+    <string name="ft">The length of baseball bat is 3.5 ft.</string>
+    <string name="in">The diameter of a golf ball is 1.68"</string>
+    <string name="nm">A beard grows at an average 7 nano meters in a second. That small!</string>
+    <string name="mm">The length of average red ant 5 millimeters.</string>
+    <string name="ang">The width of Protein α-Helix 5 angstroms.</string>
+    <string name="br">It\'s the radius of a stable hydrogen atom.</string>
+    <string name="au">It\'s taken to be the huge distance between Earth and Sun.</string>
+    <string name="planky">It\'s officially the smallest unit and is used to describe actions of quantum physics.</string>
+    <string name="mic">The diameter of a Red Blood Cell (RBC) is about 7 microns.</string>
+    <string name="ly">Light from the closest star, next to Sun, would travel for 4.3 years to reach Earth.</string>
 </resources>
